@@ -4,19 +4,23 @@
 <head>
 
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>jami_shoots | Photography Portfolio</title>
 
-<meta name="description" content="Professional Photography Portfolio">
+<meta name="description" content="Luxury Photography Portfolio by jami_shoots">
+<meta name="keywords" content="Photography, Wedding, Portrait, Lifestyle, Events">
+<meta name="author" content="Jami">
 
-<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="jami_shoots">
+<meta property="og:description" content="Capturing moments that last forever.">
+<meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
@@ -26,35 +30,47 @@
 
 <body>
 
+<!-- ========================= -->
+<!-- LOADER -->
+<!-- ========================= -->
+
 <div id="loader">
 
-<div class="loader-content">
+    <div class="loaderBox">
 
-<img src="assets/logo/logo.png" alt="Logo">
+        <img src="assets/logo/logo.png" class="loaderLogo">
 
-<h1>jami_shoots</h1>
+        <h1>jami_shoots</h1>
 
-<p>Capturing Moments That Last Forever</p>
+        <p>Capturing moments that last forever.</p>
+
+    </div>
 
 </div>
 
-</div>
+<!-- ========================= -->
+<!-- SCROLL PROGRESS -->
+<!-- ========================= -->
 
 <div id="progressBar"></div>
 
-<header>
+<!-- ========================= -->
+<!-- HEADER -->
+<!-- ========================= -->
+
+<header id="header">
 
 <nav>
 
-<div class="logo">
+<div class="brand">
 
-<img src="assets/logo/logo.png" alt="Logo">
+<img src="assets/logo/logo.png">
 
 <span>jami_shoots</span>
 
 </div>
 
-<ul>
+<ul class="desktopMenu">
 
 <li>
 
@@ -88,7 +104,7 @@ Contact
 
 </ul>
 
-<div id="menu">
+<div id="menuButton">
 
 <i class="ri-menu-3-line"></i>
 
@@ -97,6 +113,10 @@ Contact
 </nav>
 
 </header>
+
+<!-- ========================= -->
+<!-- MOBILE MENU -->
+<!-- ========================= -->
 
 <div id="mobileMenu">
 
@@ -120,9 +140,13 @@ Contact
 
 </div>
 
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
 <section id="hero">
 
-<div class="overlay"></div>
+<div class="heroOverlay"></div>
 
 <div class="heroContent">
 
@@ -132,27 +156,27 @@ Capturing
 
 <span>
 
-Moments
+Timeless
 
 </span>
 
-That Last Forever
+Memories
 
 </h1>
 
 <p>
 
-Sports
+Events
 
 Portrait
 
 Nature
 
-Events
+Lifestyle
 
 </p>
 
-<a href="#portfolio">
+<a href="#portfolio" class="heroButton">
 
 View Portfolio
 
@@ -160,11 +184,21 @@ View Portfolio
 
 </div>
 
+<div class="scrollIndicator">
+
+<i class="ri-arrow-down-line"></i>
+
+</div>
+
 </section>
+
+<!-- ========================= -->
+<!-- PORTFOLIO -->
+<!-- ========================= -->
 
 <section id="portfolio">
 
-<div class="sectionTitle">
+<div class="sectionHeading">
 
 <h2>
 
@@ -182,20 +216,24 @@ Every photograph tells a story.
 
 <div id="gallery">
 
-<!-- Photos from Google Drive -->
+<!-- Google Drive Images -->
 
 </div>
 
 </section>
 
-  <!-- ================= ABOUT / WELCOME POPUP ================= -->
+  <!-- ========================= -->
+<!-- WELCOME / ABOUT MODAL -->
+<!-- ========================= -->
 
 <div id="aboutModal" class="modal">
 
-    <div class="modal-card">
+    <div class="modalCard">
 
         <button class="closeModal" id="closeAbout">
+
             <i class="ri-close-line"></i>
+
         </button>
 
         <img src="assets/logo/logo.png" class="modalLogo" alt="Logo">
@@ -206,16 +244,43 @@ Every photograph tells a story.
 
             Welcome to my photography portfolio.
 
-            Every photo you see here represents a genuine story,
-            emotion, and memory captured through my lens.
-
-            Thank you for visiting, and I hope you enjoy my work.
+            I specialize in capturing genuine emotions,
+            timeless memories, and unforgettable stories
+            through every photograph.
 
         </p>
 
-        <div class="modalButtons">
+        <div class="modalStats">
 
-            <a id="instagramBtn" target="_blank">
+            <div>
+
+                <h3>300+</h3>
+
+                <span>Sessions</span>
+
+            </div>
+
+            <div>
+
+                <h3>5+</h3>
+
+                <span>Years</span>
+
+            </div>
+
+            <div>
+
+                <h3>100%</h3>
+
+                <span>Passion</span>
+
+            </div>
+
+        </div>
+
+        <div class="socialButtons">
+
+            <a id="instagramButton" target="_blank">
 
                 <i class="ri-instagram-line"></i>
 
@@ -223,7 +288,7 @@ Every photograph tells a story.
 
             </a>
 
-            <a id="facebookBtn" target="_blank">
+            <a id="facebookButton" target="_blank">
 
                 <i class="ri-facebook-circle-fill"></i>
 
@@ -243,7 +308,9 @@ Every photograph tells a story.
 
 </div>
 
-<!-- ================= LIGHTBOX ================= -->
+<!-- ========================= -->
+<!-- LIGHTBOX -->
+<!-- ========================= -->
 
 <div id="lightbox">
 
@@ -255,13 +322,23 @@ Every photograph tells a story.
 
     </button>
 
-    <button id="prevImage">
+    <button id="previousImage">
 
         <i class="ri-arrow-left-s-line"></i>
 
     </button>
 
-    <img id="lightboxImage" src="" alt="">
+    <div class="lightboxContainer">
+
+        <img id="lightboxImage" src="" alt="">
+
+        <div id="imageCounter">
+
+            1 / 1
+
+        </div>
+
+    </div>
 
     <button id="nextImage">
 
@@ -269,25 +346,21 @@ Every photograph tells a story.
 
     </button>
 
-    <div id="imageCounter">
-
-        1 / 1
-
-    </div>
-
 </div>
 
-<!-- ================= CONTACT ================= -->
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
 
 <section id="contact">
 
-    <div class="sectionTitle">
+    <div class="sectionHeading">
 
         <h2>Contact</h2>
 
         <p>
 
-            Let's create something beautiful together.
+            Let's create beautiful memories together.
 
         </p>
 
@@ -347,17 +420,95 @@ Every photograph tells a story.
 
     <p>
 
-        Capturing timeless memories one frame at a time.
+        Capturing timeless moments, one frame at a time.
 
     </p>
 
-    <p>
+    <div class="footerSocials">
+
+        <a id="footerInstagram">
+
+            <i class="ri-instagram-line"></i>
+
+        </a>
+
+        <a id="footerFacebook">
+
+            <i class="ri-facebook-circle-fill"></i>
+
+        </a>
+
+    </div>
+
+    <p class="copyright">
 
         © 2026 jami_shoots. All Rights Reserved.
 
     </p>
 
 </footer>
+
+  <!-- ========================= -->
+<!-- FLOATING ELEMENTS -->
+<!-- ========================= -->
+
+<div class="floatingBlob blobOne"></div>
+<div class="floatingBlob blobTwo"></div>
+<div class="floatingBlob blobThree"></div>
+
+<!-- ========================= -->
+<!-- BACK TO TOP -->
+<!-- ========================= -->
+
+<button id="backToTop">
+
+    <i class="ri-arrow-up-line"></i>
+
+</button>
+
+<!-- ========================= -->
+<!-- DARK MODE TOGGLE -->
+<!-- ========================= -->
+
+<button id="themeToggle">
+
+    <i class="ri-moon-line"></i>
+
+</button>
+
+<!-- ========================= -->
+<!-- HIDDEN DATA -->
+<!-- ========================= -->
+
+<div id="galleryData" hidden></div>
+
+<!-- ========================= -->
+<!-- GOOGLE DRIVE CONFIG -->
+<!-- ========================= -->
+
+<script>
+
+const CONFIG = {
+
+    photographer: "Jami",
+
+    brand: "jami_shoots",
+
+    instagram: "",
+
+    facebook: "",
+
+    email: "",
+
+    phone: "",
+
+    appsScript:
+
+    "https://script.google.com/macros/s/AKfycbyJKRWOSA2dBeaJ0q5W0zTJKRzyja40Bz-2qVEtMVtcxsnFctMNnO-T7zx2xl-S1wRm9w/exec"
+
+};
+
+</script>
 
 <script src="js/script.js"></script>
 
