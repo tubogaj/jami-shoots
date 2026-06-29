@@ -1,517 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Luxury photography portfolio for Jami, crafted with cinematic storytelling and editorial refinement." />
+    <title>jami_shoots | Luxury Photography</title>
 
-<head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<title>jami_shoots | Photography Portfolio</title>
-
-<meta name="description" content="Luxury Photography Portfolio by jami_shoots">
-<meta name="keywords" content="Photography, Wedding, Portrait, Lifestyle, Events">
-<meta name="author" content="Jami">
-
-<meta property="og:title" content="jami_shoots">
-<meta property="og:description" content="Capturing moments that last forever.">
-<meta property="og:type" content="website">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
-<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-
-<!-- ========================= -->
-<!-- LOADER -->
-<!-- ========================= -->
-
-<div id="loader">
-
-    <div class="loaderBox">
-
-        <img src="assets/logo/logo.png" class="loaderLogo">
-
-        <h1>jami_shoots</h1>
-
-        <p>Capturing moments that last forever.</p>
-
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen" aria-live="polite" aria-label="Loading portfolio">
+      <div class="loading-screen__inner">
+        <p class="loading-screen__eyebrow">jami_shoots</p>
+        <h1 class="loading-screen__title">Curating light, emotion, and timeless frames.</h1>
+        <span class="loading-screen__line"></span>
+      </div>
     </div>
 
-</div>
-
-<!-- ========================= -->
-<!-- SCROLL PROGRESS -->
-<!-- ========================= -->
-
-<div id="progressBar"></div>
-
-<!-- ========================= -->
-<!-- HEADER -->
-<!-- ========================= -->
-
-<header id="header">
-
-<nav>
-
-<div class="brand">
-
-<img src="assets/logo/logo.png">
-
-<span>jami_shoots</span>
-
-</div>
-
-<ul class="desktopMenu">
-
-<li>
-
-<a href="#portfolio">
-
-Portfolio
-
-</a>
-
-</li>
-
-<li>
-
-<a href="#" id="aboutOpen">
-
-About
-
-</a>
-
-</li>
-
-<li>
-
-<a href="#contact">
-
-Contact
-
-</a>
-
-</li>
-
-</ul>
-
-<div id="menuButton">
-
-<i class="ri-menu-3-line"></i>
-
-</div>
-
-</nav>
-
-</header>
-
-<!-- ========================= -->
-<!-- MOBILE MENU -->
-<!-- ========================= -->
-
-<div id="mobileMenu">
-
-<a href="#portfolio">
-
-Portfolio
-
-</a>
-
-<a href="#" id="aboutMobile">
-
-About
-
-</a>
-
-<a href="#contact">
-
-Contact
-
-</a>
-
-</div>
-
-<!-- ========================= -->
-<!-- HERO -->
-<!-- ========================= -->
-
-<section id="hero">
-
-<div class="heroOverlay"></div>
-
-<div class="heroContent">
-
-<h1>
-
-Capturing
-
-<span>
-
-Timeless
-
-</span>
-
-Memories
-
-</h1>
-
-<p>
-
-Events
-
-Portrait
-
-Nature
-
-Lifestyle
-
-</p>
-
-<a href="#portfolio" class="heroButton">
-
-View Portfolio
-
-</a>
-
-</div>
-
-<div class="scrollIndicator">
-
-<i class="ri-arrow-down-line"></i>
-
-</div>
-
-</section>
-
-<!-- ========================= -->
-<!-- PORTFOLIO -->
-<!-- ========================= -->
-
-<section id="portfolio">
-
-<div class="sectionHeading">
-
-<h2>
-
-Portfolio
-
-</h2>
-
-<p>
-
-Every photograph tells a story.
-
-</p>
-
-</div>
-
-<div id="gallery">
-
-<!-- Google Drive Images -->
-
-</div>
-
-</section>
-
-  <!-- ========================= -->
-<!-- WELCOME / ABOUT MODAL -->
-<!-- ========================= -->
-
-<div id="aboutModal" class="modal">
-
-    <div class="modalCard">
-
-        <button class="closeModal" id="closeAbout">
-
-            <i class="ri-close-line"></i>
-
-        </button>
-
-        <img src="assets/logo/logo.png" class="modalLogo" alt="Logo">
-
-        <h2>Hello, I'm Jami</h2>
-
-        <p>
-
-            Welcome to my photography portfolio.
-
-            I specialize in capturing genuine emotions,
-            timeless memories, and unforgettable stories
-            through every photograph.
-
-        </p>
-
-        <div class="modalStats">
-
-            <div>
-
-                <h3>300+</h3>
-
-                <span>Sessions</span>
-
-            </div>
-
-            <div>
-
-                <h3>5+</h3>
-
-                <span>Years</span>
-
-            </div>
-
-            <div>
-
-                <h3>100%</h3>
-
-                <span>Passion</span>
-
-            </div>
-
-        </div>
-
-        <div class="socialButtons">
-
-            <a id="instagramButton" target="_blank">
-
-                <i class="ri-instagram-line"></i>
-
-                Instagram
-
-            </a>
-
-            <a id="facebookButton" target="_blank">
-
-                <i class="ri-facebook-circle-fill"></i>
-
-                Facebook
-
-            </a>
-
-        </div>
-
-        <button id="enterPortfolio">
-
-            Enter Portfolio
-
-        </button>
-
-    </div>
-
-</div>
-
-<!-- ========================= -->
-<!-- LIGHTBOX -->
-<!-- ========================= -->
-
-<div id="lightbox">
-
-    <div class="lightboxOverlay"></div>
-
-    <button id="closeLightbox">
-
-        <i class="ri-close-line"></i>
-
-    </button>
-
-    <button id="previousImage">
-
-        <i class="ri-arrow-left-s-line"></i>
-
-    </button>
-
-    <div class="lightboxContainer">
-
-        <img id="lightboxImage" src="" alt="">
-
-        <div id="imageCounter">
-
-            1 / 1
-
-        </div>
-
-    </div>
-
-    <button id="nextImage">
-
-        <i class="ri-arrow-right-s-line"></i>
-
-    </button>
-
-</div>
-
-<!-- ========================= -->
-<!-- CONTACT -->
-<!-- ========================= -->
-
-<section id="contact">
-
-    <div class="sectionHeading">
-
-        <h2>Contact</h2>
-
-        <p>
-
-            Let's create beautiful memories together.
-
-        </p>
-
-    </div>
-
-    <div class="contactGrid">
-
-        <div class="contactCard">
-
-            <i class="ri-instagram-line"></i>
-
-            <h3>Instagram</h3>
-
-            <a id="https://www.instagram.com/jami_shoots/?fbclid=IwY2xjawSvE2lleHRuA2FlbQIxMABicmlkETFQME5Sazh6RzF0eEZUTXRic3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHvMlhKHzU1OaRumBR89RBPlJwAso2v0I_o5QLU9kISCyY1mR-ROS4b2S_Vaw_aem_O4tmCcBTESW9zDVv9f7uTA"></a>
-
-        </div>
-
-        <div class="contactCard">
-
-            <i class="ri-facebook-circle-fill"></i>
-
-            <h3>Facebook</h3>
-
-            <a id="https://www.facebook.com/jam.pacquiao"></a>
-
-        </div>
-
-        <div class="contactCard">
-
-            <i class="ri-mail-line"></i>
-
-            <h3>Email</h3>
-
-            <a id="emailLink"></a>
-
-        </div>
-
-        <div class="contactCard">
-
-            <i class="ri-phone-line"></i>
-
-            <h3>Phone</h3>
-
-            <a id="phoneLink"></a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <img src="assets/logo/logo.png" alt="Logo">
-
-    <h3>jami_shoots</h3>
-
-    <p>
-
-        Capturing timeless moments, one frame at a time.
-
-    </p>
-
-    <div class="footerSocials">
-
-        <a id="footerInstagram">
-
-            <i class="ri-instagram-line"></i>
-
+    <!-- Floating Decorative Elements -->
+    <div class="decor decor--one" aria-hidden="true"></div>
+    <div class="decor decor--two" aria-hidden="true"></div>
+    <div class="decor decor--three" aria-hidden="true"></div>
+
+    <!-- Sticky Glass Navbar -->
+    <header class="site-header" id="top">
+      <div class="site-header__inner">
+        <!-- Logo -->
+        <a href="#home" class="brand" aria-label="jami_shoots home">
+          <img src="assets/logo/logo.png" alt="jami_shoots logo" class="brand__logo" />
+          <span class="brand__name">jami_shoots</span>
         </a>
 
-        <a id="footerFacebook">
+        <!-- Primary Navigation -->
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-            <i class="ri-facebook-circle-fill"></i>
+        <!-- Mobile Hamburger Menu -->
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-        </a>
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">
+          <i class="ri-moon-line" aria-hidden="true"></i>
+        </button>
+      </div>
 
-    </div>
+      <!-- Mobile Navigation Panel -->
+      <div id="mobile-menu" class="mobile-menu" hidden>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
 
-    <p class="copyright">
+    <main id="home">
+      <!-- Fullscreen Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__background" aria-hidden="true">
+          <div class="hero__placeholder">Hero Background Placeholder</div>
+        </div>
 
-        © 2026 jami_shoots. All Rights Reserved.
+        <div class="hero__content">
+          <p class="hero__eyebrow">Fine Art Photography</p>
+          <h1 id="hero-title">Capturing soulful stories in light and shadow.</h1>
+          <p class="hero__subtitle">
+            A luxury visual journal by Jami, blending intimate portraiture, editorial fashion, and cinematic landscapes.
+          </p>
+          <div class="hero__actions">
+            <a href="#portfolio" class="button button--primary">Explore Portfolio</a>
+          </div>
+          <div class="hero__scroll-indicator" aria-label="Scroll to portfolio">
+            <span>Scroll</span>
+            <i class="ri-arrow-down-line" aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
 
-    </p>
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio" aria-labelledby="portfolio-title">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Selected Works</p>
+          <h2 id="portfolio-title">A collection of timeless, elevated imagery.</h2>
+        </div>
 
-</footer>
+        <div class="masonry-gallery" aria-label="Photography portfolio gallery">
+          <article class="gallery-card gallery-card--tall">
+            <div class="gallery-card__image" data-role="image-placeholder">Image Placeholder</div>
+            <div class="gallery-card__content">
+              <h3>Golden Hour Portraits</h3>
+              <p>Editorial warmth and intimate presence.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-card__image" data-role="image-placeholder">Image Placeholder</div>
+            <div class="gallery-card__content">
+              <h3>Midnight City</h3>
+              <p>Neon glow, motion, and modern romance.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-card__image" data-role="image-placeholder">Image Placeholder</div>
+            <div class="gallery-card__content">
+              <h3>Quiet Fashion</h3>
+              <p>Minimal fashion storytelling with depth.</p>
+            </div>
+          </article>
+          <article class="gallery-card gallery-card--wide">
+            <div class="gallery-card__image" data-role="image-placeholder">Image Placeholder</div>
+            <div class="gallery-card__content">
+              <h3>Coastal Stillness</h3>
+              <p>Soft horizons and cinematic calm.</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-  <!-- ========================= -->
-<!-- FLOATING ELEMENTS -->
-<!-- ========================= -->
+      <!-- Welcome Modal -->
+      <section id="welcome-modal" class="modal modal--welcome" aria-labelledby="welcome-title" aria-describedby="welcome-copy">
+        <div class="modal__panel">
+          <p class="modal__eyebrow">Welcome</p>
+          <h2 id="welcome-title">A refined welcome to the world of jami_shoots.</h2>
+          <p id="welcome-copy">
+            Step into a space where photography feels intimate, elevated, and timeless.
+          </p>
+          <button class="button button--ghost" type="button">Enter Gallery</button>
+        </div>
+      </section>
 
-<div class="floatingBlob blobOne"></div>
-<div class="floatingBlob blobTwo"></div>
-<div class="floatingBlob blobThree"></div>
+      <!-- About Modal -->
+      <section id="about" class="modal modal--about" aria-labelledby="about-title" aria-describedby="about-copy">
+        <div class="modal__panel">
+          <p class="modal__eyebrow">About</p>
+          <h2 id="about-title">About Jami</h2>
+          <p id="about-copy">
+            Jami is a photographer driven by atmosphere, human connection, and the poetry of natural light.
+          </p>
+          <a href="#contact" class="button button--primary">Work With Jami</a>
+        </div>
+      </section>
 
-<!-- ========================= -->
-<!-- BACK TO TOP -->
-<!-- ========================= -->
+      <!-- Premium Lightbox -->
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox__close" type="button" aria-label="Close lightbox">
+          <i class="ri-close-line" aria-hidden="true"></i>
+        </button>
+        <div class="lightbox__content">
+          <p class="lightbox__placeholder">Premium Lightbox Placeholder</p>
+        </div>
+      </div>
 
-<button id="backToTop">
+      <!-- Contact Section -->
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p class="section-heading__eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s create something unforgettable.</h2>
+        </div>
+        <div class="contact__content">
+          <p>For commissions, editorials, or private sessions, reach out to begin your story.</p>
+          <a href="mailto:hello@jami-shoots.com" class="button button--primary">hello@jami-shoots.com</a>
+        </div>
+      </section>
+    </main>
 
-    <i class="ri-arrow-up-line"></i>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>© 2026 jami_shoots. Crafted with intention.</p>
+    </footer>
 
-</button>
+    <!-- Back To Top Button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+      <i class="ri-arrow-up-line" aria-hidden="true"></i>
+    </a>
 
-<!-- ========================= -->
-<!-- DARK MODE TOGGLE -->
-<!-- ========================= -->
+    <!-- Empty Containers for JavaScript -->
+    <div id="portfolio-data" hidden></div>
+    <div id="modal-state" hidden></div>
+    <div id="gallery-state" hidden></div>
 
-<button id="themeToggle">
-
-    <i class="ri-moon-line"></i>
-
-</button>
-
-<!-- ========================= -->
-<!-- HIDDEN DATA -->
-<!-- ========================= -->
-
-<div id="galleryData" hidden></div>
-
-<!-- ========================= -->
-<!-- GOOGLE DRIVE CONFIG -->
-<!-- ========================= -->
-
-<script>
-
-const CONFIG = {
-
-    photographer: "Jami",
-
-    brand: "jami_shoots",
-
-    instagram: "",
-
-    facebook: "",
-
-    email: "",
-
-    phone: "",
-
-    appsScript:
-
-    "https://script.google.com/macros/s/AKfycbyJKRWOSA2dBeaJ0q5W0zTJKRzyja40Bz-2qVEtMVtcxsnFctMNnO-T7zx2xl-S1wRm9w/exec"
-
-};
-
-</script>
-
-<script src="js/script.js"></script>
-
-</body>
-
+    <!-- Script -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
